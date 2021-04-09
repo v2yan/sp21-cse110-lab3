@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <h1>Vivian's Journal</h1>
+            <!--links to each journal entry-->
             <nav id="top-nav">
                 <a href="#entry-1">Entry #1</a>
                 <a href="#entry-2">Entry #2</a>
@@ -18,37 +18,50 @@
             </nav>
         </header>
         <main>
+            <h1>Vivian's Journal</h1>
+
+            <!--entry 1-->
             <section id="entry-1">
                 <h2>Monday | April 5, 2021</h2>
+
                 <h3>Highlights :)</h3>
                 <ul>
                     <li>Hiking</li>
                     <li>Hung out with friends</li>
                     <li>Baked cookies</li>
                 </ul>
+
                 <h3>Lowlights :(</h3>
                 <ul>
                     <li>No nap</li>
                     <li>Missed Warriors game</li>
                     <li>No nap</li>
                 </ul>
+
                 <h3>Todo</h3>
                 <ol>
                     <li>Watch lectures</li>
                     <li>Clean apartment</li>
                     <li>Grocery shopping</li>
                 </ol>
+
                 <h3>Thoughts</h3>
                 <p> I aspire to create <strong>meaningful</strong> and <strong>conscious</strong> content.</p>
+
                 <h3>Today's Media</h3>
                 <div id="multimedia">
                     <img src="/images/cat.JPG" alt="cat meme" width="400" height="300"><br>
+
                     <audio controls>
                         <source src="audio/geese.wav" type="audio/wav">
                     </audio><br>
+
                     <video width="400" height="300" controls>
                         <source src="videos/vidA4.mp4" type="video/mp4">
-                    </video><br><br>
+                    </video>
+                    
+                    <br><br>
+
                     <details>
                         <summary> Details of Media</summary>
                         <p><b>image: </b>today's mood <br>
@@ -59,54 +72,68 @@
                 </div>
             </section>
             <hr>
+
+            <!--entry 2-->
             <section id="entry-2">
                 <h2>Tuesday | April 6, 2021</h2>
+
                 <h3>Highlights :)</h3>
                 <ul>
                     <li>Hiking</li>
                     <li>Hung out with friends</li>
                     <li>Baked cookies</li>
                 </ul>
+
                 <h3>Lowlights :(</h3>
                 <ul>
                     <li>No nap</li>
                     <li>Missed Warriors game</li>
                     <li>No nap</li>
                 </ul>
+
                 <h3>Todo</h3>
                 <ol>
                     <li>Watch lectures</li>
                     <li>Clean apartment</li>
                     <li>Grocery shopping</li>
                 </ol>
+
                 <h3>Thoughts</h3>
                 <p> I want to watch the movie <i>Soul</i> soon.</p>
 
             </section>
             <hr>
+
+            <!--entry 3-->
             <section id="entry-3">
                 <h2>Wednesday | April 7, 2021</h2>
+
                 <h3>Highlights :)</h3>
                 <ul>
                     <li>Hiking</li>
                     <li>Hung out with friends</li>
                     <li>Baked cookies</li>
                 </ul>
+
                 <h3>Lowlights :(</h3>
                 <ul>
                     <li>No nap</li>
                     <li>Missed Warriors game</li>
                     <li>No nap</li>
                 </ul>
+
                 <h3>Todo</h3>
                 <ol>
                     <li>Watch lectures</li>
                     <li>Clean apartment</li>
                     <li>Grocery shopping</li>
                 </ol>
+
                 <h3>Thoughts</h3>
                 <p>I <em>never</em> want to run again. </p>
                 <hr>
+
+                <!--add entry form-->
                 <form id="new-entry">
                     <fieldset>
                         <legend>Create new entry:</legend>
@@ -117,7 +144,8 @@
                         <input type="radio" id="work" name="day-type" value="work"> 
                         <label for="work"></label>Work<br>
                         <input type="radio" id="day-off" name="day-type" value="day-off"> 
-                        <label for="day-off">Day off</label><br>
+                        <label for="day-off">Day off</label>
+                        <br>
 
                         <p>Meals Eaten:</p>
                         <input type="checkbox" id="breakfast" name="breakfast" value="breakfast">
@@ -125,10 +153,12 @@
                         <input type="checkbox" id="lunch" name="lunch" value="lunch">
                         <label for="lunch">Lunch</label><br>
                         <input type="checkbox" id="dinner" name="dinner" value="dinner">
-                        <label for="dinner">Dinner</label><br><br>
+                        <label for="dinner">Dinner</label>
+                        <br><br>
 
                         <label for="mood">Today's Mood:</label>
-                        <input type="text" id="mood"> <br><br>
+                        <input type="text" id="mood"> 
+                        <br><br>
 
                         
                         <label for="weather-report">Today's Weather:</label>
