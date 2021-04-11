@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <meta name="description" content="Journal Entries " />
+        <meta name="description" content="Journal Entries" />
         <meta name="author" content="Vivian Yan" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Vivian Yan's Journal</title>
@@ -10,6 +10,8 @@
     </head>
     <body>
         <header>
+            <h1>Vivian's Journal</h1>
+            
             <!--links to each journal entry-->
             <nav id="top-nav">
                 <a href="#entry-1">Entry #1</a>
@@ -17,9 +19,8 @@
                 <a href="#entry-3">Entry #3</a>
             </nav>
         </header>
+        
         <main>
-            <h1>Vivian's Journal</h1>
-
             <!--entry 1-->
             <section id="entry-1">
                 <h2>Monday | April 5, 2021</h2>
@@ -35,7 +36,7 @@
                 <ul>
                     <li>No nap</li>
                     <li>Missed Warriors game</li>
-                    <li>No nap</li>
+                    <li>No snacks</li>
                 </ul>
 
                 <h3>Todo</h3>
@@ -50,11 +51,13 @@
 
                 <h3>Today's Media</h3>
                 <div id="multimedia">
-                    <img src="/images/cat.JPG" alt="cat meme" width="400" height="300"><br>
+                    <img src="images/cat.JPG" alt="cat meme" width="400" height="300">
+                    <br>
 
                     <audio controls>
                         <source src="audio/geese.wav" type="audio/wav">
-                    </audio><br>
+                    </audio>
+                    <br>
 
                     <video width="400" height="300" controls>
                         <source src="videos/vidA4.mp4" type="video/mp4">
@@ -64,9 +67,9 @@
 
                     <details>
                         <summary> Details of Media</summary>
-                        <p><b>image: </b>today's mood <br>
-                           <b>sound: </b>today's favorite sound <br>
-                           <b>video: </b>today's adventure  
+                        <p><b>image:</b>today's mood <br>
+                           <b>sound:</b>today's favorite sound <br>
+                           <b>video:</b>today's adventure  
                         </p>
                     </details>
                 </div>
@@ -79,28 +82,24 @@
 
                 <h3>Highlights :)</h3>
                 <ul>
-                    <li>Hiking</li>
-                    <li>Hung out with friends</li>
-                    <li>Baked cookies</li>
+                    <li>Watched movies</li>
+                    <li>Went to SF</li>
                 </ul>
 
                 <h3>Lowlights :(</h3>
                 <ul>
-                    <li>No nap</li>
-                    <li>Missed Warriors game</li>
-                    <li>No nap</li>
+                    <li>Missed bus</li>
+                    <li>Late to school</li>
                 </ul>
 
                 <h3>Todo</h3>
                 <ol>
-                    <li>Watch lectures</li>
-                    <li>Clean apartment</li>
-                    <li>Grocery shopping</li>
+                    <li>Dentist appointment</li>
+                    <li>Walk dog</li>
                 </ol>
 
                 <h3>Thoughts</h3>
                 <p> I want to watch the movie <i>Soul</i> soon.</p>
-
             </section>
             <hr>
 
@@ -110,92 +109,93 @@
 
                 <h3>Highlights :)</h3>
                 <ul>
-                    <li>Hiking</li>
-                    <li>Hung out with friends</li>
+                    <li>Visted grandma</li>
+                    <li>Baked cake</li>
                     <li>Baked cookies</li>
                 </ul>
 
                 <h3>Lowlights :(</h3>
                 <ul>
-                    <li>No nap</li>
-                    <li>Missed Warriors game</li>
-                    <li>No nap</li>
+                    <li>Woke up late</li>
+                    <li>Didn't get tacos</li>
                 </ul>
 
                 <h3>Todo</h3>
                 <ol>
-                    <li>Watch lectures</li>
-                    <li>Clean apartment</li>
-                    <li>Grocery shopping</li>
+                    <li>Laundry</li>
+                    <li>Attend meeting</li>
+                    <li>Send mail</li>
                 </ol>
 
                 <h3>Thoughts</h3>
                 <p>I <em>never</em> want to run again. </p>
                 <hr>
+           </section>
 
-                <!--add entry form-->
-                <form id="new-entry">
-                    <fieldset>
-                        <legend>Create new entry:</legend>
-                        <label for="date">Date:</label>
-                        <input type="date" id="date"> <br>
+            <!--add entry form-->
+            <form id="new-entry">
+                <fieldset>
+                    <legend>Create new entry:</legend>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                    <br>
 
-                        <p>Work or Day Off:</p>
-                        <input type="radio" id="work" name="day-type" value="work"> 
-                        <label for="work"></label>Work<br>
-                        <input type="radio" id="day-off" name="day-type" value="day-off"> 
-                        <label for="day-off">Day off</label>
-                        <br>
+                    <p>Work or Day Off:</p>
+                    <input type="radio" id="work" name="day-type" value="work"> 
+                    <label for="work">Work</label><br>
+                    <input type="radio" id="day-off" name="day-type" value="day-off"> 
+                    <label for="day-off">Day off</label>
+                    <br>
 
-                        <p>Meals Eaten:</p>
-                        <input type="checkbox" id="breakfast" name="breakfast" value="breakfast">
-                        <label for="breakfast">Breakfast</label><br>
-                        <input type="checkbox" id="lunch" name="lunch" value="lunch">
-                        <label for="lunch">Lunch</label><br>
-                        <input type="checkbox" id="dinner" name="dinner" value="dinner">
-                        <label for="dinner">Dinner</label>
-                        <br><br>
+                    <p>Meals Eaten:</p>
+                    <input type="checkbox" id="breakfast" name="breakfast" value="breakfast">
+                    <label for="breakfast">Breakfast</label><br>
+                    <input type="checkbox" id="lunch" name="lunch" value="lunch">
+                    <label for="lunch">Lunch</label><br>
+                    <input type="checkbox" id="dinner" name="dinner" value="dinner">
+                    <label for="dinner">Dinner</label>
+                    <br><br>
 
-                        <label for="mood">Today's Mood:</label>
-                        <input type="text" id="mood"> 
-                        <br><br>
+                    <label for="mood">Today's Mood:</label>
+                    <input type="text" id="mood" name="mood"> 
+                    <br><br>
 
-                        
-                        <label for="weather-report">Today's Weather:</label>
-                        <input list="weather" id="weather-report"> <br>
-                        <datalist id="weather">
-                            <option value="cloudy">
-                            <option value="sunny">
-                            <option value="rainy">
-                            <option value="snowy">
-                        </datalist>
-                        <br>
+                    
+                    <label for="weather-report">Today's Weather:</label>
+                    <input list="weather" id="weather-report" name="weather-report"> <br>
+                    <datalist id="weather">
+                        <option value="cloudy">
+                        <option value="sunny">
+                        <option value="rainy">
+                        <option value="snowy">
+                    </datalist>
+                    <br>
 
-                        <label for="hrs-slept">Hours Slept:</label>
-                        <select name="hrs-slept" id="hrs-slept">
-                            <option value="one">1</option>
-                            <option value="two" >2</option>
-                            <option value="three">3</option>
-                            <option value="four">4</option>
-                            <option value="five" >5</option>
-                            <option value="six">6</option>
-                            <option value="seven">7</option>
-                            <option value="eight" selected>8</option>
-                            <option value="nine-up">9+</option>
-                        </select>
-                        <br><br>
+                    <label for="hrs-slept">Hours Slept:</label>
+                    <select name="hrs-slept" id="hrs-slept">
+                        <option value="one">1</option>
+                        <option value="two" >2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five" >5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight" selected>8</option>
+                        <option value="nine-up">9+</option>
+                    </select>
+                    <br><br>
 
-                        <textarea id="thoughts" placeholder="write thoughts here..."></textarea>     
-                    </fieldset>
-    
-                    <button id="create-button" type="submit" form="new-entry">Add Entry</button>
-                </form>
-            </section>
-           
+                    <textarea id="thoughts" placeholder="write thoughts here..."></textarea>     
+                </fieldset>
+
+                <button id="create-button" type="submit" form="new-entry">Add Entry</button>
+            </form>
         </main>
+        
         <footer>
             <hr>
             <p>made by Vivian Yan <span>&copy;</span> 2021 </p>
         </footer>
+        
     </body>
 </html>
