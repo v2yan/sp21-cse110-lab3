@@ -16,8 +16,8 @@ Explain intended behavior and occurring behavior.
 Detail efforts to try to debug.  
 
 ## Have you tried searching online for similar issues?  
-[] yes. 
-[] no. 
+[] yes.  
+[] no.  
 
 if so, list links:  
 
