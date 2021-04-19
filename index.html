@@ -6,7 +6,7 @@
         <meta name="author" content="Vivian Yan" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Vivian Yan's Journal</title>
-        <!--<link rel="icon" type="image/png" href="./images/favicon-32x32.png">-->
+        <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
         <link rel="stylesheet" type="text/css" href="./styles/main.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">  
@@ -18,7 +18,8 @@
     <body>
         <header>
             <h1>Vivian's Journal</h1>
-            <p> place for my thoughts</p>
+            <p> a place for my thoughts</p>
+
             <!--links to each journal entry-->
             <nav id="top-nav">
                 <a href="#entry-1">Entry #1</a>
@@ -67,32 +68,31 @@
                     <p> I aspire to create <strong>meaningful</strong> and <strong>conscious</strong> content.</p>
                 </div>
                 
-                <h3>Today's Media</h3>
-                <div id="multimedia">
-                    <img src="images/cat.JPG" alt="cat meme" width="400" height="300">
+                <section id="multimedia">
+                    <h3>Today's Media</h3>
+                    <img id="cat-image" src="images/cat.JPG" alt="cat meme">
                     <br>
 
-                    <audio controls>
+                    <audio id="geese-sound" controls >
                         <source src="audio/geese.wav" type="audio/wav">
                     </audio>
                     <br>
 
-                    <video width="400" height="300" controls>
+                    <video id="ocean-video" width="400" height="300" controls>
                         <source src="videos/vidA4.mp4" type="video/mp4">
                     </video>
                     
                     <br><br>
 
-                    <details>
+                    <details id="media-details">
                         <summary> Details of Media</summary>
                         <p><b>image:</b>today's mood <br>
                            <b>sound:</b>today's favorite sound <br>
                            <b>video:</b>today's adventure  
                         </p>
                     </details>
-                </div>
+                </section>
             </section>
-            <hr>
 
             <!--entry 2-->
             <section id="entry-2">
@@ -107,6 +107,7 @@
                         </ul>
     
                     </section>
+
                     <section class="lowlights">
                         <h3>Lowlights :(</h3>
                         <ul class="hl-lights">
@@ -132,7 +133,6 @@
                 </div>
             
             </section>
-            <hr>
 
             <!--entry 3-->
             <section id="entry-3">
@@ -147,6 +147,7 @@
                             <li>Baked cookies</li>
                         </ul>
                     </section>
+
                     <section class="lowlights">
                         <h3>Lowlights :(</h3>
                         <ul class="hl-lights">
@@ -171,7 +172,7 @@
                     <p>I <em>never</em> want to run again. </p>
                 </div>
 
-                <hr>
+
            </section>
 
             <!--add entry form-->
@@ -227,16 +228,16 @@
                     </select>
                     <br><br>
 
-                    <textarea id="thoughts" placeholder="write thoughts here..."></textarea>     
+                    <textarea id="new-thoughts" placeholder="write thoughts here..."></textarea>     
                 </fieldset>
 
                 <button id="create-button" type="submit" form="new-entry">Add Entry</button>
             </form>
         </main>
-
         <hr>
+
         <footer>
-            <p>made by Vivian Yan <span>&copy;</span> 2021 </p>
+            <p>Vivian Yan <span>&copy;</span> 2021 </p>
         </footer>
         
     </body>
