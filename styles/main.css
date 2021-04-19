@@ -46,7 +46,7 @@ legend {
     font-size: 40px;
 }
 
-a, p, li , label {
+a, p, li , label, {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -164,8 +164,10 @@ h3 + p {
     display: none;
 }
 
+/* add entry form */
+
 #new-entry {
-    margin: 0rem 5rem;
+    margin: 1rem 5rem;
     border: solid var(--sagegreen);
 }
 
@@ -183,6 +185,14 @@ p ~ input {
     border:solid rgb(112, 77, 77);
 }
 
+#create-button {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--sagegreen);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0px 10px 10px 50px;
+}
 /* footer */
 footer {
     display: flex;
@@ -193,3 +203,4 @@ footer p {
     text-align: center;
 }
 
+/* media query for responsiveness */
