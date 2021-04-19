@@ -33,18 +33,29 @@ h2 {
     margin: auto;
     padding-top: 2%;
     padding-bottom: 2%;
-    padding-left: 40%;
+    padding-left: 2%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, legend {
     font-family: 'Abril Fatface', cursive;
     font-weight: lighter; 
     color: rgb(54,69,79);
 }
 
+legend {
+    font-size: 40px;
+}
+
 a, p, li , label {
     font-family: 'Open Sans', sans-serif;
 }
+
+span {
+    display: block;
+    text-align: center;
+    color: var(--sagegreen);
+}
+
 
 /* title & nav bar */
 header p {
@@ -105,6 +116,10 @@ ul.hl-lights {
     box-shadow: 2px 2px 2px 2px  hsla(150, 17.81%, 71.37%, .5);
 }
 
+section[class="todo"] {
+    background-color: white;
+}
+
 section > h3 {
     text-align: left;
     margin-bottom: .5em;
@@ -118,6 +133,12 @@ section > h3 {
     border-radius: 2em;
 }
 
+h3 + p {
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(112, 77, 77);
+}
+
 /* multimedia - img, audio, vid */
 
 #multimedia h3 {
@@ -129,7 +150,7 @@ section > h3 {
     height: 400px;
     width: 450;
     position: relative;
-    left: 500px;
+    left: 350px;
     bottom: 40px;
 }
 
@@ -143,6 +164,25 @@ section > h3 {
     display: none;
 }
 
+#new-entry {
+    margin: 0rem 5rem;
+    border: solid var(--sagegreen);
+}
+
+fieldset {
+    border: none;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+fieldset p {
+    font-weight: bolder;
+}
+
+p ~ input {
+    border:solid rgb(112, 77, 77);
+}
+
 /* footer */
 footer {
     display: flex;
@@ -152,11 +192,4 @@ footer {
 footer p {
     text-align: center;
 }
-
-span {
-    display: block;
-    text-align: center;
-    color: var(--sagegreen);
-}
-
 
