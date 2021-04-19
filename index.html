@@ -12,7 +12,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">  
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
+        <style>
+            /* media query for responsiveness */
+            @media screen and (min-width: 640px) {
+                header {
+                    min-width: 600px;
+                }
 
+                #geese-sound {
+                    max-width: 250px;
+                    position: static;
+                }
+
+                #cat-image {
+                    max-width: 250px;
+                    height: auto;
+                }
+
+                #entry-1, #entry-2, #entry-2 {
+                    min-width: 500px;
+                }
+
+                h2, h3 {
+                    font-size: 1.5em;
+                }
+            }
+        </style>
 
     </head>
     <body>
@@ -44,7 +69,7 @@
         
                      </section>
                
-                    <section class="lowlights">
+                    <section class="lowlights" style="background-color: rgb(227, 235, 227);">
                         <h3>Lowlights :(</h3>
                         <ul class="hl-lights">
                             <li>No nap</li>
@@ -82,16 +107,6 @@
                     <video id="ocean-video" width="400" height="300" controls>
                         <source src="videos/vidA4.mp4" type="video/mp4">
                     </video>
-                    
-                    <br><br>
-
-                    <details id="media-details">
-                        <summary> Details of Media</summary>
-                        <p><b>image:</b>today's mood <br>
-                           <b>sound:</b>today's favorite sound <br>
-                           <b>video:</b>today's adventure  
-                        </p>
-                    </details>
                 </section>
             </section>
 
