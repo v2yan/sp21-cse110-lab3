@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    -border: solid gray;
 }
 
 :root {
@@ -36,18 +35,8 @@ h2 {
     padding-left: 2%;
 }
 
-h1, h2, h3, legend {
-    font-family: 'Abril Fatface', cursive;
-    font-weight: lighter; 
-    color: rgb(54,69,79);
-}
-
 legend {
     font-size: 40px;
-}
-
-a, p, li , label, {
-    font-family: 'Open Sans', sans-serif;
 }
 
 span {
@@ -56,6 +45,17 @@ span {
     color: var(--sagegreen);
 }
 
+
+h1, h2, h3, legend {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: lighter; 
+    color: rgb(54,69,79);
+}
+
+
+a, p, li , label {
+    font-family: 'Open Sans', sans-serif;
+}
 
 /* title & nav bar */
 header p {
@@ -148,7 +148,7 @@ h3 + p {
 
 #cat-image {
     height: 400px;
-    width: 450;
+    width: 450px;
     position: relative;
     left: 350px;
     bottom: 40px;
@@ -193,6 +193,7 @@ p ~ input {
     padding: 10px;
     margin: 0px 10px 10px 50px;
 }
+
 /* footer */
 footer {
     display: flex;
@@ -203,4 +204,4 @@ footer p {
     text-align: center;
 }
 
-/* media query for responsiveness */
+
